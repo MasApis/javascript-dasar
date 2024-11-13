@@ -49,3 +49,29 @@ console.log(salah);
 console.log(`12 < 20 = ${perbandingan}`);
 
 console.log("\n");
+
+//Nila kosong(Null dan Undefined)
+// JavaScript memiliki dua nilai spesial yang merepresentasikan nilai kosong, yaitu null dan undefined. Keduanya digunakan untuk menunjukkan ketiadaan nilai (the absence of something).
+console.log("NULL AND UNDEFINED"); // ini hanya teks judul
+// Null banyak diadopsi dalam berbagai bahasa pemrograman sebagai tipe data standar untuk menunjukkan nilai yang tidak ada. Untuk membuat null, kita cukup menulis sintaksis null.
+const variableNull = null;
+// Adapun undefined hadir dalam JavaScript sebagai nilai implisit ketika kita mendeklarasikan variabel tanpa menginisialisasi dengan nilai apa pun. 
+let variableUndefined;
+// secara teknis kita juga bisa memberikan nilai undefined di dalam sebuah variable
+// const variableUndefined = undefined;
+
+/* 
+Sekilas, null dan undefined terlihat sama, tetapi sebenarnya mereka berbeda. Perbedaan ini dapat terlihat lebih jelas ketika kita membandingkan objek yang propertinya bernilai null dan undefined dalam format JSON.
+*/
+const nama1 = {first: 'Abdul', last: null};
+const nama2 = {first: 'Bambang', last: undefined};
+
+console.log(variableNull);
+console.log(variableUndefined);
+// Properti yang diberi nilai undefined tidak akan tampak ketika diubah ke JSON karena JSON tidak mendukung tipe data undefined. Oleh karena itu, null lebih standar untuk menunjukkan nilai kosong.
+console.log(JSON.stringify(nama1)); // Output : {first: 'Abdul', last: null}
+console.log(JSON.stringify(nama2)); // Output : {first: 'Abdul'}
+
+/*
+  !!!!! alangkah baiknya gunakan null jika ingin memberikan nilai kosong 
+*/
