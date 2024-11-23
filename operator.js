@@ -33,7 +33,7 @@ lokasi = 'kijang';
 
 /*
 Arithmetic Operator
-Operator aritmetika adalah operator standar yang digunakan untuk proses aritmetika, seperti penambahan (+), pengurangan (-), pengalian (*), ataupun pembagian (/). 
+Operator aritmetika adafilah operator standar yang digunakan untuk proses aritmetika, seperti penambahan (+), pengurangan (-), pengalian (*), ataupun pembagian (/). 
 */
 console.log('OPERATOR ARITMATIKA')
 const penjumlahan = 12 + 12; // operator penjumlahan
