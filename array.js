@@ -59,7 +59,6 @@ const animal = ["cheetah", "cat", "bird", "fish", "elephants", "snake", ""];
 
 
 // Manipulasi(merubah/menambah) Nilai Array
-
 // Menggunakan indexing
 // mengubah nilai element ke 6
 animal[5] = "crocodile"; // indexs ke 5 array animal(yang artinya element ke 6) kita manipulasi menjadi crocodile.
@@ -77,3 +76,61 @@ animal.push("snake");
 // unshift adalah cara yang kita gunakan untuk menambahkan nilai ke dalam array pada element awal.
 animal.unshift("frog");
 console.log(animal);
+
+
+// Menghapus Element dan Data Array
+/*
+Data pada array dapat dihapus menggunakan keyword delete. Untuk menghapus data yang diinginkan, kita perlu mengetahui nilai indeksnya terlebih dahulu. Contohnya seperti di bawah ini yang akan menghapus data array pada indeks ke-1.
+*/
+const koncoTemu = ["bedul", "parhan", "donek", "bayu"];
+// Data pada array sudah berhasil dihapus, tetapi element-nya masih ada.
+// delete koncoTemu[1];
+
+/*
+bagaimana cara untuk menghapus element dan datanya? Untuk melakukan hal itu dapat dilakukan dengan menggunakan method splice() seperti berikut ini.
+*/
+// koncoTemu.splice(1, 1);
+/*
+Pada contoh di atas, kita menghapus element indeks ke-1 dan jumlah element yang dihapus adalah 1. Lalu, bagaimana caranya kita ingin menghapus dua element dari array?
+*/
+// koncoTemu.splice(1, 2);
+
+/*
+ ada cara lainnya yaitu menggunakan method shift dan pop. Kekurangan dari kedua method ini adalah tidak sefleksibel delete dan splice karena shift hanya menghapus element pertama dan pop menghapus element terakhir.
+*/
+// koncoTemu.shift();
+koncoTemu.pop();
+// console.log(koncoTemu);
+
+
+/*
+Array Destructuring
+Destructuring digunakan untuk melihat isi dari array. Destructuring cukup mudah dilakukan yaitu dengan menggunakan kurung siku yang di dalamnya adalah nama variabel yang kita assign. Kemudian diikuti dengan assignment operator sama dengan (=) dan array yang ingin diambil nilainya.
+*/
+const koncoPondok = ["bambang", "fahri", "dupi", "brenden", "raply"];
+const [orang1, orang2, orang3] = koncoPondok;
+// console.log(orang1, orang2, orang3);
+
+
+/*
+Array Method
+Perlu diketahui bahwa array memiliki banyak sekali method atau fungsi bawaan yang dapat digunakan untuk memudahkan proses pengelolaan atau penggunaannya. Kita hanya akan membahas beberapa method array yang sering digunakan dalam kehidupan sehari-hari oleh programmer JavaScript.
+*/
+
+// Reverse
+/*
+Reverse adalah method yang digunakan untuk membalikkan nilai array. Metode reverse() mengembalikan array dengan element yang dibalik.
+Element pertama array akan menjadi element terakhir akhir dan sebaliknya. Method reverse tidak akan membuat array baru, tetapi mengatur ulang elemen tersebut di dalam array yang sudah ada.
+*/
+const jobIt = ["software engginer", "data scientist", "ai engginer", "mobile development"];
+jobIt.reverse();
+// console.log(jobIt);
+
+// Sort
+/*
+Sort adalah method yang digunakan untuk mengurutkan nilai array. Loh, katanya array sudah menyimpan data secara terurut kok masih perlu mengurutkan array menggunakan sort? Memang array sudah mengurutkan data sesuai dengan indeks-nya tetapi mengurutkan berdasarkan indeks saja belum cukup. 
+Terkadang, kita butuh untuk mengurutkan array berdasarkan kriteria tertentu sesuai kebutuhan aplikasi. Secara default, array akan diurutkan secara ascending. Contohnya seperti berikut.
+*/
+const alphabet = ['B', 'F', 'G', 'A', 'D', 'C', 'Z', 'Y', 'K', 'M'];
+alphabet.sort();
+console.log(alphabet);

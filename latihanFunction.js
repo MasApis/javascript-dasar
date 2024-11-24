@@ -95,11 +95,27 @@ Buat sebuah function bernama greet yang menerima satu parameter name dan mengemb
  *    yang diberikan argumen name = 'Indra' tanpa memberikan nilai origin.
  */
 
-function hello(name, origin = "Bandung") {
-    return `Halo! Nama saya ${name}. Saya tinggal di ${origin}.`
-}
+// function hello(name, origin = "Bandung") {
+//     return `Halo! Nama saya ${name}. Saya tinggal di ${origin}.`
+// }
 
-const rahmat = hello("Abdul Hafidz", "Kepulauan Riau");
-const indra = hello("Indra");
-console.log(rahmat);
-console.log(indra);
+// const rahmat = hello("Abdul Hafidz", "Kepulauan Riau");
+// const indra = hello("Indra");
+// console.log(rahmat);
+// console.log(indra);
+
+
+// kalkulator sederhana.
+const penjumlahan = (angka1, angka2) => angka1 + angka2
+const pengurangan = (angka1, angka2) => angka1 - angka2
+const perkalian = (angka1, angka2) => angka1 * angka2
+const pembagian = (angka1, angka2) => angka1 / angka2
+
+const hasilPenjumlahan = penjumlahan(15, 17);
+const hasilPengurangan = pengurangan(15, 17);
+const hasilPerkalian = perkalian(15, 17);
+const hasilPembagian = pembagian(15, 17);
+console.log("hasil penjumlahan 15 + 17 = ", hasilPenjumlahan);
+console.log("hasil pengurangan 15 - 17 = ", hasilPengurangan);
+console.log("hasil perkalian 15 x 17 = ", hasilPerkalian);
+console.log("hasil pembagian 15 / 17 = ", hasilPembagian);
