@@ -1,0 +1,21 @@
+{
+  "name": "javascript-dasar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "array.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MasApis/javascript-dasar.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type" : "module",
+  "bugs": {
+    "url": "https://github.com/MasApis/javascript-dasar/issues"
+  },
+  "homepage": "https://github.com/MasApis/javascript-dasar#readme"
+}
